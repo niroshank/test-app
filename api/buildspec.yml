@@ -13,6 +13,7 @@ phases:
 artifacts:
   type: zip
   files:
+  base-directory: $CODEBUILD_SRC_DIR/api/
     - template.yml
     - outputtemplate.yml
   secondary-artifacts:
