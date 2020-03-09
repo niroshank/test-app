@@ -7,7 +7,7 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs10.x
-      CodeUri: ./
+      CodeUri: ./function-1/
       Events:
         MyTimeApi:
           Type: Api
