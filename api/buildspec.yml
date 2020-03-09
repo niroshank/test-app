@@ -13,7 +13,7 @@ phases:
 artifacts:
   type: zip
   files:
-    - 
     - api/template.yml
     - api/outputtemplate.yml
+  name: secondary-artifact-name-1  
     
