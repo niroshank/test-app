@@ -13,13 +13,11 @@ phases:
 artifacts:
   type: zip
   files:
-  base-directory: api/
-    - template.yml
-    - outputtemplate.yml
+    - api/template.yml
+    - api/outputtemplate.yml
   secondary-artifacts:
     artifact2:
-      base-directory: api/
       files:
-        - function-1 
+        - api/function-1 
       name: function-1-lambda
     
