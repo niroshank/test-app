@@ -8,6 +8,7 @@ phases:
       - cd $CODEBUILD_SRC_DIR/api/function-1/
       - npm install time
       - zip -r function-1.zip .
+      - mv function-1.zip $CODEBUILD_SRC_DIR/api
       - cd ..
       - export BUCKET=lambda-deployment-artifacts-1234567890123jvn
       - aws cloudformation package --template-file template.yml --s3-bucket $BUCKET --output-template-file outputtemplate.yml
@@ -19,6 +20,6 @@ artifacts:
   secondary-artifacts:
     artifact2:
       files:
-        - api/function-1/function-1.zip
-      name: function-1-lambda
+        - api/function-1.zip
+      name: functions-lambda
     
