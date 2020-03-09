@@ -13,12 +13,12 @@ phases:
 artifacts:
   type: zip
   files:
-  base-directory: $CODEBUILD_SRC_DIR/api/
+  base-directory: api/
     - template.yml
     - outputtemplate.yml
   secondary-artifacts:
     artifact2:
-      base-directory: $CODEBUILD_SRC_DIR/api/
+      base-directory: api/
       files:
         - function-1 
       name: function-1-lambda
