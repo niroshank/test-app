@@ -5,9 +5,9 @@ phases:
         nodejs: 10
   build:
     commands:
-      - cd function-1
+      - cd app/function-1
       - npm install time
-      - cd..
+      - cd ..
       - export BUCKET=lambda-deployment-artifacts-1234567890123jvn
       - aws cloudformation package --template-file template.yml --s3-bucket $BUCKET --output-template-file outputtemplate.yml
 artifacts:
